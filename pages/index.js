@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import LoginForm from '../modules/loginform'
 import loginBackground from '../public/images/login.svg'
 
 export default function Home() {
@@ -16,7 +17,9 @@ export default function Home() {
           <Image src={loginBackground} alt='image with graph and people' />
         </div>
       </aside>
-      <section className='flex-grow'></section>
+      <section className='flex flex-grow justify-center items-center bg-blue-800 h-screen'>
+        <LoginForm />
+      </section>
     </main>
   )
 }
